@@ -45,7 +45,8 @@
      "texto": "Taxa fixa esquecida, preço na zona ruim e markup baixo: três erros que fazem lojista trabalhar muito e lucrar pouco.\n\nCom a Calculadora de Markup e Lucro você coloca custo e preço e vê na hora quanto sobra de verdade."
     }
    ],
-   "tipo": "vendas"
+   "tipo": "vendas",
+   "evento": "INITIATED_CHECKOUT"
   },
   {
    "id": "seguidores",

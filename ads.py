@@ -69,7 +69,7 @@ def criar(so=None):
                     "targeting_automation": {"advantage_audience": 1}}
             if c.get("tipo", "vendas") == "vendas":
                 extra = {"optimization_goal": "OFFSITE_CONVERSIONS",
-                         "promoted_object": {"pixel_id": PLANO["pixel"], "custom_event_type": "PURCHASE"}}
+                         "promoted_object": {"pixel_id": PLANO["pixel"], "custom_event_type": c.get("evento", "PURCHASE")}}
             else:
                 alvo["publisher_platforms"] = ["instagram"]
                 extra = {"optimization_goal": "VISIT_INSTAGRAM_PROFILE", "destination_type": "INSTAGRAM_PROFILE"}
