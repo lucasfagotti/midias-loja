@@ -10,3 +10,6 @@
 !/requirements.txt
 !/publicados.json
 !/respondidos.json
+!/ads.py
+!/ads.json
+!/ads_estado.json

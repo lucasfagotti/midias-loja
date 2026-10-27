@@ -1,0 +1,38 @@
+# Vigia os anúncios 3x por dia e pausa o que gastar o corte sem resultado (regras em ads.json).
+# Nunca aumenta orçamento. A trava principal é o limite de gastos da conta, definido pelo Lucas na Meta.
+name: Anuncios
+on:
+  schedule:
+    - cron: "0 12,18,23 * * *"   # 9h, 15h e 20h de Brasília
+  workflow_dispatch:
+concurrency:
+  group: robos
+  cancel-in-progress: false
+permissions:
+  contents: write
+  issues: write
+jobs:
+  monitorar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      TZ: America/Sao_Paulo
+      META_ADS_TOKEN: ${{ secrets.META_ADS_TOKEN }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python ads.py monitorar
+      - name: Salvar o que foi feito
+        run: |
+          git config user.name "robo-loja"
+          git config user.email "robo-loja@users.noreply.github.com"
+          [ -f ads_estado.json ] && git add ads_estado.json
+          if ! git diff --cached --quiet; then
+            git commit -m "estado dos anuncios"
+            git pull --rebase && git push
+          fi

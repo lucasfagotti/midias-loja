@@ -1,0 +1,32 @@
+{
+ "conta": "act_1809559753571949",
+ "pagina": "1496038213583415",
+ "instagram": "17841464398916190",
+ "pixel": "1146624898015689",
+ "base_midia": "https://lucasfagotti.github.io/midias-loja",
+ "regras": {
+  "corte_sem_checkout": 25,
+  "corte_sem_venda": 75,
+  "limite_mes": 300
+ },
+ "publico": {"pais": "BR", "idade_min": 21, "idade_max": 60},
+ "campanhas": [
+  {
+   "id": "kit",
+   "nome": "Vendas - Kit Vendedor",
+   "orcamento_dia": 10,
+   "link": "https://pay.kiwify.com.br/jYJYacc",
+   "anuncios": [
+    {"nome": "Kit - Zona ruim de taxa", "video": "midia/ads/zonas-ads.mp4", "capa": "midia/zonas_1.png",
+     "titulo": "Calculadora de Markup e Lucro",
+     "texto": "R$ 79,90 pode deixar mais dinheiro no bolso do que R$ 82. A taxa fixa muda conforme a faixa de preço, e muita gente cai na faixa errada sem perceber.\n\nA Calculadora de Markup e Lucro mostra o lucro real de cada produto depois das taxas e avisa quando o preço cai na zona ruim. Vem com o guia do anúncio que vende."},
+    {"nome": "Kit - Markup 2x vs 3x", "video": "midia/ads/markup-ads.mp4", "capa": "midia/markup_1.png",
+     "titulo": "Preço certo em 1 minuto",
+     "texto": "Markup 2x parece bom até você descontar a taxa do marketplace. Num produto de R$ 20, a diferença entre 2x e 3x é de R$ 7,50 para R$ 23,50 por venda.\n\nA calculadora faz essa conta sozinha para cada produto, com markup padrão de 3x e mínimo de 2,5x para promoções."},
+    {"nome": "Kit - 3 erros de preço", "video": "midia/ads/erros-preco-ads.mp4", "capa": "midia/erros_1.png",
+     "titulo": "Pare de precificar no achismo",
+     "texto": "Taxa fixa esquecida, preço na zona ruim e markup baixo: três erros que fazem lojista trabalhar muito e lucrar pouco.\n\nCom a Calculadora de Markup e Lucro você coloca custo e preço e vê na hora quanto sobra de verdade."}
+   ]
+  }
+ ]
+}
