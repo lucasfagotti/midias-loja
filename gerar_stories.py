@@ -48,6 +48,19 @@ DICAS = [
     "Use o mesmo fundo e o mesmo estilo nas fotos. A loja fica reconhecível no meio da busca.",
     "Separe um valor fixo por mês para anúncio e meça o resultado. Gasto sem medir é aposta.",
     "Antes de entrar num marketplace novo, simule as taxas dele com o seu produto. Cada canal cobra diferente.",
+    "Kit com produto parado + campeão de venda gira o estoque sem queimar a margem.",
+    "Antes de comprar coleção nova, veja quanto dinheiro ainda está parado na coleção passada.",
+    "No Mercado Livre, Clássico e Premium têm taxas diferentes. Simule os dois antes de escolher.",
+    "Responda avaliação positiva também. Agradecer em público mostra que tem gente cuidando da loja.",
+    "Natal pede kit presente e embalagem caprichada. Monte os kits na primeira semana de dezembro.",
+    "Depois da Black Friday, olhe o que sobrou e planeje a saída antes do Natal.",
+    "Kit de presente com preço fechado facilita a decisão de quem compra para outra pessoa.",
+    "Salve suas respostas mais usadas como atalhos no WhatsApp Business e responda em segundos.",
+    "Foto de detalhe (costura, sola, etiqueta) responde a dúvida que o cliente nem chegou a perguntar.",
+    "Antes da virada do ano, faça o inventário: o que tem, quanto custou e há quanto tempo está parado.",
+    "Planeje janeiro em dezembro: a liquidação de verão começa logo depois das festas.",
+    "Reels com o produto em uso mostra caimento e tamanho melhor que qualquer descrição.",
+    "Copie as taxas reais da sua conta na calculadora. Taxa chutada dá lucro chutado.",
 ]
 MITOS = [  # (afirmação, é verdade?, explicação)
     ("Preço mais baixo sempre vende mais.", False, "Preço baixo sem margem vende e dá prejuízo. Preço certo com anúncio bom vende melhor."),
@@ -81,6 +94,19 @@ MITOS = [  # (afirmação, é verdade?, explicação)
     ("Copiar o preço do concorrente é seguro.", False, "O custo dele não é o seu. Calcule o seu preço pelo seu custo."),
     ("Investir pouco em anúncio não adianta nada.", False, "Um valor pequeno e medido mostra o que funciona antes de gastar mais."),
     ("Produto bom se vende sozinho.", False, "Sem foto, título e preço certos, o cliente nem chega a ver o produto."),
+    ("Desconto alto é a única forma de vender na Black Friday.", False, "Kit, brinde e frete bem calculado também atraem, sem destruir a margem."),
+    ("Clássico e Premium do Mercado Livre cobram a mesma taxa.", False, "O Premium cobra mais e oferece parcelamento sem juros ao cliente."),
+    ("Arrependimento e defeito têm o mesmo prazo.", False, "Arrependimento: 7 dias na compra online. Defeito: garantia legal de 30 ou 90 dias."),
+    ("Responder avaliação positiva também ajuda.", True, "Mostra que a loja é cuidada e incentiva outros clientes a avaliar."),
+    ("Embalagem caprichada faz diferença no Natal.", True, "Quem compra presente valoriza receber pronto para entregar."),
+    ("Inventário é coisa de loja grande.", False, "Sem saber o que tem e há quanto tempo está parado, você compra errado."),
+    ("Mensagem pronta deixa o atendimento frio.", False, "Ela é a base: você ajusta o nome e o detalhe e responde rápido."),
+    ("Planejar a liquidação de janeiro em dezembro é cedo demais.", False, "Quem decide antes o que vai liquidar não precisa correr depois das festas."),
+    ("Taxa chutada na calculadora dá lucro chutado.", True, "Copie as taxas reais da sua conta antes de definir o preço."),
+    ("Kit com produto parado ajuda a girar o estoque.", True, "Junto de um campeão de vendas, o parado sai sem você baixar o preço."),
+    ("Foto de detalhe é exagero.", False, "Costura, sola e etiqueta respondem dúvidas e passam confiança."),
+    ("Comprar coleção nova resolve o estoque parado.", False, "Coleção nova sem girar a antiga só aumenta o dinheiro parado."),
+    ("Conteúdo pronto deixa o perfil igual aos outros.", False, "Com as suas fotos, cores e @, o post fica com a cara da sua loja."),
 ]
 FRASES = [
     "Vender muito não é o mesmo que lucrar.", "Preço certo não espanta cliente. Espanta prejuízo.",
@@ -91,6 +117,9 @@ FRASES = [
     "Fechar o mês é a reunião mais importante da sua loja.", "Seu concorrente não sabe o seu custo.",
     "Uma troca evitada vale mais que uma venda no prejuízo.", "Loja organizada vende com menos esforço.",
     "Quem se prepara antes vende na data. Quem corre depois, liquida.",
+    "Estoque que gira é dinheiro que volta.", "Atendimento rápido também é marketing.",
+    "Taxa certa, preço certo, lucro de verdade.", "Post bom é post publicado.", "Cada canal tem a sua conta.",
+    "Planejar a data custa menos que liquidar depois.",
 ]
 CTAS = [  # (palavra, pergunta, o que é)
     ("KIT", "Não sabe quanto sobra depois das taxas?", "Calculadora de Markup e Lucro + Guia do Anúncio que Vende"),
@@ -103,7 +132,16 @@ CTAS = [  # (palavra, pergunta, o que é)
     ("AUDITORIA", "Quer saber a nota da sua loja?", "Audite a loja sozinho em uma tarde"),
     ("POSTS", "Instagram da loja parado?", "36 posts com fotos reais e legendas prontas, no Canva grátis"),
     ("RELATORIO", "Quer saber o que mudar primeiro?", "Nota da loja, análise dos seus preços e plano de ação em PDF"),
+    ("ESTOQUE", "Quanto dinheiro está parado na sua prateleira?", "Planilha Estoque que Gira: curva ABC, dinheiro parado e quanto repor"),
+    ("ML", "Vende no Mercado Livre?", "Calculadora 2026 com as taxas da sua conta + bônus TikTok Shop"),
+    ("RESPOSTAS", "Responde tudo do zero?", "122 mensagens prontas para atendimento, trocas e avaliações"),
+    ("REELS", "Quer 10 Reels com os seus produtos?", "Você manda as fotos e recebe os vídeos narrados em até 5 dias úteis"),
+    ("CALENDARIO", "Já sabe as datas que vendem em 2027?", "Calendário Comercial 2027: 32 datas e quando preparar cada uma"),
+    ("CONTEUDO", "Sem ideia do que postar?", "Todo mês: 20 posts no Canva, roteiros de Reels e legendas"),
+    ("COMBO", "Quer os 4 produtos essenciais juntos?", "Calculadora, auto-consultoria, financeiro e 36 posts por R$ 127"),
 ]
+# Story de produto no dia do Reels de lançamento: chama o mesmo produto
+CTA_DO_REEL = {"estoque": "ESTOQUE", "ml": "ML", "respostas": "RESPOSTAS", "reels": "REELS", "calendario": "CALENDARIO", "conteudo": "CONTEUDO"}
 SLOTS = [(8, 40), (11, 0), (15, 0), (17, 30), (21, 0)]
 
 
@@ -220,7 +258,11 @@ def main():
                     st_slide(os.path.join(BASE, arq), os.path.join(BASE, s), "SALVOU ESSE?", "Tá no perfil, junto com os outros posts")
             elif i == 3:
                 arq, tit = f"midia/stories/{ds}-4-cta.jpg", "Story: chamada de produto"
-                st_cta(os.path.join(BASE, arq), *CTAS[k % len(CTAS)])
+                cta = CTAS[k % len(CTAS)]
+                lanc = post and "midia/lancamento/" in post["arquivos"] and os.path.basename(post["arquivos"]).split("_")[0].rstrip("2")
+                if lanc in CTA_DO_REEL:
+                    cta = next(c for c in CTAS if c[0] == CTA_DO_REEL[lanc])
+                st_cta(os.path.join(BASE, arq), *cta)
             else:
                 if post and post["tipo"] == "reels":
                     arq, tit = post["arquivos"].strip(), "Story: Reels do dia"
