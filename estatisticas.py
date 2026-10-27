@@ -38,8 +38,7 @@ def main():
     med = requests.get(f"{GRAPH}/{IG_USER}/media", params={"fields": "id,caption,media_type,timestamp,permalink",
                                                             "limit": 12, "access_token": IG_TOKEN}, timeout=30).json()
     est["recentes"] = [{"id": m["id"], "tipo": m.get("media_type"), "quando": m.get("timestamp", "")[:16],
-                        "titulo": (m.get("caption") or "").split("
-")[0][:90], "link": m.get("permalink")} for m in med.get("data", [])]
+                        "titulo": (m.get("caption") or "").splitlines()[0][:90] if m.get("caption") else "", "link": m.get("permalink")} for m in med.get("data", [])]
     json.dump(est, open(ARQ, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"seguidores: {est['seguidores']}")
 
