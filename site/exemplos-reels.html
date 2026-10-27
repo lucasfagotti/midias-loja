@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reels Narrados: exemplos | Loja que Lucra</title>
+<style>
+  :root { --bg: #0F1623; --card: #172133; --text: #F1F5F9; --muted: #8A97AD; --roxo: #7C3AED; --coral: #EE4D2D; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: system-ui, "Segoe UI", Arial, sans-serif; padding: 32px 16px 60px; }
+  header { max-width: 1100px; margin: 0 auto 28px; }
+  .k { color: var(--coral); font-weight: 700; letter-spacing: 1.5px; font-size: 13px; }
+  h1 { font-size: clamp(28px, 5vw, 44px); margin: 8px 0 10px; }
+  p { color: var(--muted); max-width: 720px; line-height: 1.55; }
+  .grade { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 16px; }
+  figure { background: var(--card); border-radius: 16px; overflow: hidden; }
+  video { width: 100%; aspect-ratio: 9 / 16; display: block; background: #000; }
+  figcaption { padding: 10px 12px 12px; font-size: 13px; font-weight: 600; }
+  figcaption span { display: block; color: var(--muted); font-weight: 400; font-size: 12px; margin-top: 2px; }
+  .nota { max-width: 1100px; margin: 26px auto 0; font-size: 13px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="k">LOJA QUE LUCRA · REELS NARRADOS PARA SUA LOJA</div>
+  <h1>10 vídeos de exemplo</h1>
+  <p>Feitos para uma loja de demonstração com 5 produtos e as fotos deles. Com a sua loja, os vídeos saem com os seus produtos, a sua cor e o seu @. Toque para assistir com som.</p>
+</header>
+<main class="grade" id="grade"></main>
+<p class="nota">Loja e fotos de demonstração (fotos: Pixabay). Narração gerada por inteligência artificial com licença comercial.</p>
+<script>
+  const formatos = ["Lançamento", "3 motivos", "Como usar", "O detalhe", "Tamanho certo", "Look completo", "Preço", "Queridinhos", "Presente", "Bastidores"];
+  const grade = document.getElementById("grade");
+  formatos.forEach((f, i) => {
+    const n = String(i + 1).padStart(2, "0");
+    grade.insertAdjacentHTML("beforeend", `<figure><video controls preload="none" playsinline poster="../midia/demo/reel-${n}.jpg" src="../midia/demo/reel-${n}.mp4"></video><figcaption>Reel ${n}<span>${f}</span></figcaption></figure>`);
+  });
+</script>
+</body>
+</html>
