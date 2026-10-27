@@ -1,0 +1,25 @@
+# Lembretes que chegam como aviso (issue) do GitHub, com e-mail.
+name: Lembretes
+on:
+  schedule:
+    - cron: "0 12 18 11 *"   # 18/11, 9h de Brasília
+    - cron: "0 12 23 11 *"   # 23/11, 9h de Brasília
+  workflow_dispatch:
+permissions:
+  issues: write
+  contents: read
+jobs:
+  combo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lembrar do Combo (só se ainda não foi configurado)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if grep -q '"COMBO": "Oi! Os produtos estão todos no link da bio' respostas.json; then
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "📦 Lembrete: criar o Combo na Kiwify até 25/11" \
+              --body "No dia 25/11 sai o Reel que pede para comentar COMBO. Crie o produto Combo Lojista Completo (Kit Vendedor + Auto-Consultoria + Gestão Financeira + Pack 36 Posts) por R\$ 127 na Kiwify e mande o link do checkout para o Claude colocar no robô de comentários."
+          else
+            echo "Combo já configurado, sem lembrete."
+          fi

@@ -1,0 +1,30 @@
+# Renova o token do Instagram (vale 60 dias) no dia 1 e 15 de cada mês e guarda o novo nos segredos.
+# Precisa do segredo GH_PAT: chave do GitHub com permissão "Secrets: Read and write" neste repositório.
+name: Renovar token
+on:
+  schedule:
+    - cron: "0 12 1,15 * *"
+  workflow_dispatch:
+permissions:
+  issues: write
+jobs:
+  renovar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Renovar
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          novo=$(curl -fsS "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=$IG_ACCESS_TOKEN" \
+                 | python3 -c "import sys, json; d = json.load(sys.stdin); print(d['access_token']); print('vale mais', d['expires_in'] // 86400, 'dias', file=sys.stderr)")
+          echo "::add-mask::$novo"
+          printf %s "$novo" | gh secret set IG_ACCESS_TOKEN --repo "$GITHUB_REPOSITORY"
+          echo "Token renovado."
+      - name: Avisar se falhou
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create --repo "$GITHUB_REPOSITORY" --title "⚠️ Não consegui renovar o token do Instagram" \
+            --body "A renovação automática falhou. Abra o Claude e peça para verificar o token do Instagram (aba Actions > Renovar token mostra o erro)."
