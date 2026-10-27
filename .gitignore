@@ -1,4 +1,12 @@
 /*
 !/midia/
 !/site/
+!/.github/
 !/.gitignore
+!/bot.py
+!/comentarios.py
+!/respostas.json
+!/calendario.csv
+!/requirements.txt
+!/publicados.json
+!/respondidos.json
