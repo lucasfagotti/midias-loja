@@ -85,7 +85,7 @@ def criar(so=None):
             cri = api("POST", f"{conta}/adcreatives", name=a["nome"], object_story_spec={
                 "page_id": PLANO["pagina"], "instagram_user_id": PLANO["instagram"],
                 "video_data": {"video_id": vid, "image_url": f"{PLANO['base_midia']}/{a['capa']}", "message": a["texto"], "title": a["titulo"],
-                               "call_to_action": {"type": "LEARN_MORE" if c.get("tipo", "vendas") == "vendas" else "VISIT_INSTAGRAM_PROFILE",
+                               "call_to_action": {"type": "LEARN_MORE" if c.get("tipo", "vendas") == "vendas" else "VIEW_INSTAGRAM_PROFILE",
                                                   "value": {"link": c["link"]}}}})["id"]
             ec["anuncios"][a["nome"]] = api("POST", f"{conta}/ads", name=a["nome"], adset_id=ec["conjunto"],
                                             creative={"creative_id": cri}, status="PAUSED")["id"]

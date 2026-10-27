@@ -20,7 +20,7 @@
   {
    "id": "kit",
    "nome": "Vendas - Kit Vendedor",
-   "orcamento_dia": 5.5,
+   "orcamento_dia": 5.2,
    "link": "https://pay.kiwify.com.br/jYJYacc",
    "anuncios": [
     {
@@ -51,7 +51,7 @@
    "id": "seguidores",
    "tipo": "seguidores",
    "nome": "Seguidores - Dicas para lojistas",
-   "orcamento_dia": 4.5,
+   "orcamento_dia": 5.2,
    "link": "https://www.instagram.com/loja_quelucra/",
    "anuncios": [
     {
