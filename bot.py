@@ -44,7 +44,7 @@ def esperar_container(cid, tentativas=40):
             return
         if r.get("status_code") == "ERROR":
             raise RuntimeError(f"container com erro: {r}")
-        time.sleep(15)
+        time.sleep(5 if tentativas <= 20 else 15)
     raise TimeoutError("container não ficou pronto")
 
 
@@ -59,9 +59,13 @@ def ig_criar(params):
 def publicar_instagram(tipo, arquivos, legenda):
     if tipo == "imagem":
         cid = ig_criar({"image_url": url_publica(arquivos[0]), "caption": legenda})
+        esperar_container(cid, tentativas=20)
     elif tipo == "carrossel":
         filhos = [ig_criar({"image_url": url_publica(a), "is_carousel_item": "true"}) for a in arquivos]
+        for filho in filhos:
+            esperar_container(filho, tentativas=20)
         cid = ig_criar({"media_type": "CAROUSEL", "children": ",".join(filhos), "caption": legenda})
+        esperar_container(cid, tentativas=20)
     elif tipo == "reels":
         cid = ig_criar({"media_type": "REELS", "video_url": url_publica(arquivos[0]), "caption": legenda, "share_to_feed": "true"})
         esperar_container(cid)
