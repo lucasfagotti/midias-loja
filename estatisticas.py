@@ -18,7 +18,7 @@ def main():
     est = json.load(open(ARQ, encoding="utf-8")) if os.path.exists(ARQ) else {"dias": {}}
     agora = dt.datetime.now()
     ultimo = est.get("atualizado")
-    if ultimo and agora - dt.datetime.fromisoformat(ultimo) < dt.timedelta(minutes=55):
+    if ultimo and agora - dt.datetime.fromisoformat(ultimo) < dt.timedelta(minutes=55) and "recentes" in est:
         return
     perfil = requests.get(f"{GRAPH}/{IG_USER}", params={"fields": "followers_count,follows_count,media_count",
                                                          "access_token": IG_TOKEN}, timeout=30).json()
@@ -35,6 +35,11 @@ def main():
             est[{"reach": "alcance_hoje", "profile_views": "visitas_hoje"}[m["name"]]] = m.get("total_value", {}).get("value", 0)
     except Exception as e:
         print("insights indisponíveis:", e)
+    med = requests.get(f"{GRAPH}/{IG_USER}/media", params={"fields": "id,caption,media_type,timestamp,permalink",
+                                                            "limit": 12, "access_token": IG_TOKEN}, timeout=30).json()
+    est["recentes"] = [{"id": m["id"], "tipo": m.get("media_type"), "quando": m.get("timestamp", "")[:16],
+                        "titulo": (m.get("caption") or "").split("
+")[0][:90], "link": m.get("permalink")} for m in med.get("data", [])]
     json.dump(est, open(ARQ, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"seguidores: {est['seguidores']}")
 
