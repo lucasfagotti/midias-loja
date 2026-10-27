@@ -16,3 +16,5 @@
 !/agendar_lancamento.py
 !/gerar_stories.py
 !/links.json
+!/estatisticas.py
+!/estatisticas.json
