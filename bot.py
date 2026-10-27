@@ -65,6 +65,10 @@ def publicar_instagram(tipo, arquivos, legenda):
     elif tipo == "reels":
         cid = ig_criar({"media_type": "REELS", "video_url": url_publica(arquivos[0]), "caption": legenda, "share_to_feed": "true"})
         esperar_container(cid)
+    elif tipo == "story":
+        campo = "video_url" if arquivos[0].endswith(".mp4") else "image_url"
+        cid = ig_criar({"media_type": "STORIES", campo: url_publica(arquivos[0])})
+        esperar_container(cid)
     else:
         raise ValueError(f"tipo desconhecido: {tipo}")
     r = requests.post(f"{GRAPH}/{IG_USER}/media_publish", data={"creation_id": cid, "access_token": IG_TOKEN}, timeout=60).json()
