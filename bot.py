@@ -97,6 +97,17 @@ def enviar_tiktok_rascunho(arquivo):
     return init["data"]["publish_id"]
 
 
+def ja_no_perfil(legenda):
+    """Trava contra post duplicado: a mesma legenda já saiu no perfil nas últimas 12h?"""
+    try:
+        r = requests.get(f"{GRAPH}/{IG_USER}/media", params={"fields": "caption,timestamp", "limit": 8, "access_token": IG_TOKEN}, timeout=30).json()
+        limite = dt.datetime.now(dt.timezone.utc) - dt.timedelta(hours=12)
+        return any((m.get("caption") or "").strip()[:120] == legenda.strip()[:120] and
+                   dt.datetime.strptime(m["timestamp"], "%Y-%m-%dT%H:%M:%S%z") > limite for m in r.get("data", []))
+    except Exception:
+        return False
+
+
 def rodar(dry):
     feitos = carregar_publicados()
     agora = dt.datetime.now()
@@ -114,6 +125,10 @@ def rodar(dry):
             log(f"[simulação] {linha['plataforma']} {linha['tipo']}: {arquivos} | {linha['legenda'][:60]}...")
             continue
         try:
+            if linha["plataforma"] == "instagram" and linha["tipo"] != "story" and ja_no_perfil(linha["legenda"]):
+                feitos[chave] = {"id": "duplicado-evitado", "em": f"{agora:%Y-%m-%d %H:%M}"}
+                salvar_publicados(feitos); log(f"pulado (já está no perfil): {arquivos[0]}")
+                continue
             if linha["plataforma"] == "instagram":
                 pid = publicar_instagram(linha["tipo"], arquivos, linha["legenda"])
             elif linha["plataforma"] == "tiktok":

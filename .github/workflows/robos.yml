@@ -21,6 +21,8 @@ jobs:
       PUBLIC_BASE_URL: ${{ secrets.PUBLIC_BASE_URL }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # sempre a versão mais nova (não a do momento em que a rodada foi agendada)
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
