@@ -1,0 +1,14 @@
+{
+ "campanhas": {
+  "kit": {
+   "anuncios": {
+    "Kit - Zona ruim de taxa": "120252799135280597",
+    "Kit - Markup 2x vs 3x": "120252799137610597",
+    "Kit - 3 erros de preço": "120252799139810597"
+   },
+   "campanha": "120252799131560597",
+   "conjunto": "120252799132580597"
+  }
+ },
+ "pausados_pelo_robo": {}
+}

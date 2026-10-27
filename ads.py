@@ -1,6 +1,6 @@
 """Robô de anúncios (Meta Marketing API). Plano em ads.json; ids criados em ads_estado.json.
 Uso:
-  python ads.py criar        cria campanhas/conjuntos/anúncios do ads.json, TUDO PAUSADO
+  python ads.py criar [id]   cria campanhas/conjuntos/anúncios do ads.json, TUDO PAUSADO
   python ads.py ativar kit   liga a campanha (só com o OK do Lucas: isso gasta dinheiro)
   python ads.py pausar kit   pausa a campanha
   python ads.py monitorar    aplica as regras de corte (roda na nuvem 3x por dia)
@@ -16,6 +16,7 @@ G = "https://graph.facebook.com/v25.0"
 TOKEN = os.getenv("META_ADS_TOKEN", "")
 PLANO = json.load(open(os.path.join(BASE, "ads.json"), encoding="utf-8"))
 ESTADO = os.path.join(BASE, "ads_estado.json")
+PLANOS = {c["id"]: c for c in PLANO["campanhas"]}
 NUVEM = bool(os.getenv("GITHUB_ACTIONS"))
 
 
@@ -53,21 +54,28 @@ def esperar_video(vid, limite=60):
     raise RuntimeError(f"vídeo {vid} não ficou pronto")
 
 
-def criar():
+def criar(so=None):
     e = ler_estado(); conta, pub = PLANO["conta"], PLANO["publico"]
     for c in PLANO["campanhas"]:
+        if so and c["id"] != so:
+            continue
         ec = e["campanhas"].setdefault(c["id"], {"anuncios": {}})
         if "campanha" not in ec:
-            ec["campanha"] = api("POST", f"{conta}/campaigns", name=c["nome"], objective="OUTCOME_SALES", status="PAUSED",
+            ec["campanha"] = api("POST", f"{conta}/campaigns", name=c["nome"], objective="OUTCOME_SALES" if c.get("tipo", "vendas") == "vendas" else "OUTCOME_TRAFFIC", status="PAUSED",
                                  special_ad_categories=[], buying_type="AUCTION", is_adset_budget_sharing_enabled=False)["id"]
             gravar_estado(e); print("campanha", c["nome"])
         if "conjunto" not in ec:
+            alvo = {"geo_locations": {"countries": [pub["pais"]]}, "age_min": pub["idade_min"], "age_max": pub["idade_max"],
+                    "targeting_automation": {"advantage_audience": 1}}
+            if c.get("tipo", "vendas") == "vendas":
+                extra = {"optimization_goal": "OFFSITE_CONVERSIONS",
+                         "promoted_object": {"pixel_id": PLANO["pixel"], "custom_event_type": "PURCHASE"}}
+            else:
+                alvo["publisher_platforms"] = ["instagram"]
+                extra = {"optimization_goal": "VISIT_INSTAGRAM_PROFILE", "destination_type": "INSTAGRAM_PROFILE"}
             ec["conjunto"] = api("POST", f"{conta}/adsets", name=f"{c['nome']} - Brasil", campaign_id=ec["campanha"], status="PAUSED",
                                  daily_budget=int(c["orcamento_dia"] * 100), billing_event="IMPRESSIONS",
-                                 optimization_goal="OFFSITE_CONVERSIONS", bid_strategy="LOWEST_COST_WITHOUT_CAP",
-                                 promoted_object={"pixel_id": PLANO["pixel"], "custom_event_type": "PURCHASE"},
-                                 targeting={"geo_locations": {"countries": [pub["pais"]]}, "age_min": pub["idade_min"], "age_max": pub["idade_max"],
-                                            "targeting_automation": {"advantage_audience": 1}})["id"]
+                                 bid_strategy="LOWEST_COST_WITHOUT_CAP", targeting=alvo, **extra)["id"]
             gravar_estado(e); print("conjunto", c["nome"])
         for a in c["anuncios"]:
             if a["nome"] in ec["anuncios"]:
@@ -77,7 +85,8 @@ def criar():
             cri = api("POST", f"{conta}/adcreatives", name=a["nome"], object_story_spec={
                 "page_id": PLANO["pagina"], "instagram_user_id": PLANO["instagram"],
                 "video_data": {"video_id": vid, "image_url": f"{PLANO['base_midia']}/{a['capa']}", "message": a["texto"], "title": a["titulo"],
-                               "call_to_action": {"type": "LEARN_MORE", "value": {"link": c["link"]}}}})["id"]
+                               "call_to_action": {"type": "LEARN_MORE" if c.get("tipo", "vendas") == "vendas" else "VISIT_INSTAGRAM_PROFILE",
+                                                  "value": {"link": c["link"]}}}})["id"]
             ec["anuncios"][a["nome"]] = api("POST", f"{conta}/ads", name=a["nome"], adset_id=ec["conjunto"],
                                             creative={"creative_id": cri}, status="PAUSED")["id"]
             gravar_estado(e); print("anúncio", a["nome"])
@@ -118,8 +127,12 @@ def monitorar():
             if api("GET", ad, fields="status")["status"] != "ACTIVE":
                 continue
             n = numeros(ad)
-            motivo = ("gastou o corte sem nenhum checkout" if n["gasto"] >= r["corte_sem_checkout"] and n["checkouts"] == 0 else
-                      "gastou o corte sem nenhuma venda" if n["gasto"] >= r["corte_sem_venda"] and n["vendas"] == 0 else None)
+            if PLANOS[cid].get("tipo", "vendas") == "seguidores":
+                custo = n["gasto"] / n["cliques"] if n["cliques"] else 99
+                motivo = "visita ao perfil cara demais" if n["gasto"] >= r["seguidores_corte_gasto"] and custo > r["seguidores_custo_max_visita"] else None
+            else:
+                motivo = ("gastou o corte sem nenhum checkout" if n["gasto"] >= r["corte_sem_checkout"] and n["checkouts"] == 0 else
+                          "gastou o corte sem nenhuma venda" if n["gasto"] >= r["corte_sem_venda"] and n["vendas"] == 0 else None)
             if motivo:
                 api("POST", ad, status="PAUSED")
                 e["pausados_pelo_robo"][ad] = {"nome": nome, "motivo": motivo, "em": f"{dt.datetime.now():%Y-%m-%d %H:%M}"}
@@ -152,7 +165,7 @@ if __name__ == "__main__":
         sys.exit("Falta META_ADS_TOKEN")
     acao = sys.argv[1] if len(sys.argv) > 1 else ""
     if acao == "criar":
-        criar()
+        criar(sys.argv[2] if len(sys.argv) > 2 else None)
     elif acao in ("ativar", "pausar") and len(sys.argv) > 2:
         mudar(sys.argv[2], "ACTIVE" if acao == "ativar" else "PAUSED")
     elif acao == "monitorar":
