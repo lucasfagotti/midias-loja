@@ -107,7 +107,7 @@ def rodar(dry):
         quando += dt.timedelta(minutes=int(hashlib.md5(chave.encode()).hexdigest(), 16) % 26)
         if quando > agora or (chave in feitos and "id" in feitos[chave]) or feitos.get(chave, {}).get("falhas", 0) >= 3:
             continue
-        if linha["plataforma"] == "tiktok" and not TT_TOKEN:
+        if linha["tipo"] == "tiktok-agendado" or (linha["plataforma"] == "tiktok" and not TT_TOKEN):
             continue  # sem token do TikTok: posta manual pelo TikTok Studio
         arquivos = [a.strip() for a in linha["arquivos"].split("|")]
         if dry:
