@@ -20,7 +20,7 @@
   {
    "id": "kit",
    "nome": "Vendas - Kit Vendedor",
-   "orcamento_dia": 5.2,
+   "orcamento_dia": 10.4,
    "link": "https://lucasfagotti.github.io/midias-loja/site/kit/?utm_source=meta&utm_medium=ads&utm_campaign=kit",
    "anuncios": [
     {
@@ -76,7 +76,8 @@
      "titulo": "Dicas para vender mais",
      "texto": "Anúncio pago não conserta anúncio fraco. Três mitos sobre Ads que fazem lojista gastar sem retorno.\n\nSiga para mais dicas de preço, anúncio e estoque."
     }
-   ]
+   ],
+   "pausada": "29/10: verba passada para vendas a pedido do Lucas"
   }
  ]
 }
