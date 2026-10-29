@@ -68,6 +68,9 @@ def criar(so=None):
             alvo = {"geo_locations": {"countries": [pub["pais"]]}, "age_min": pub["idade_min"], "age_max": pub["idade_max"],
                     "targeting_automation": {"advantage_audience": 1}}
             if c.get("tipo", "vendas") == "vendas":
+                # sem Audience Network: lá o clique vem de joguinho (recompensa), não de comprador
+                alvo.update(publisher_platforms=["facebook", "instagram"], facebook_positions=["feed", "story", "facebook_reels"],
+                            instagram_positions=["stream", "story", "reels"])
                 extra = {"optimization_goal": "OFFSITE_CONVERSIONS",
                          "promoted_object": {"pixel_id": PLANO["pixel"], "custom_event_type": c.get("evento", "PURCHASE")}}
             else:
