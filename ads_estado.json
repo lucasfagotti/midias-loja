@@ -3,9 +3,9 @@
   "kit": {
    "campanha": "120252799131560597",
    "anuncios": {
-    "Kit - Zona ruim de taxa": "120252810821010597",
-    "Kit - Markup 2x vs 3x": "120252810834930597",
-    "Kit - 3 erros de preço": "120252810849950597"
+    "Kit - Zona ruim de taxa (página)": "120252838266960597",
+    "Kit - Markup 2x vs 3x (página)": "120252838269240597",
+    "Kit - 3 erros de preço (página)": "120252838269900597"
    },
    "conjunto": "120252810813280597"
   },
@@ -30,6 +30,15 @@
     "Kit - 3 erros de preço": "120252799139810597"
    },
    "motivo": "otimizava PURCHASE sem histórico; trocado por INITIATED_CHECKOUT em 27/10"
+  },
+  {
+   "campanha": "kit",
+   "anuncios": {
+    "Kit - Zona ruim de taxa": "120252810821010597",
+    "Kit - Markup 2x vs 3x": "120252810834930597",
+    "Kit - 3 erros de preço": "120252810849950597"
+   },
+   "motivo": "iam direto ao checkout; trocados por anúncios para a página de vendas em 29/10"
   }
  ]
 }
