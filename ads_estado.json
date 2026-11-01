@@ -4,8 +4,8 @@
    "campanha": "120252799131560597",
    "anuncios": {
     "Kit - Zona ruim de taxa (página)": "120252838266960597",
-    "Kit - Markup 2x vs 3x (página)": "120252838269240597",
-    "Kit - 3 erros de preço (página)": "120252838269900597"
+    "Estoque - Dinheiro parado (página)": "120252874017420597",
+    "Respostas - 122 mensagens (página)": "120252874036950597"
    },
    "conjunto": "120252810813280597"
   },
@@ -39,6 +39,20 @@
     "Kit - 3 erros de preço": "120252810849950597"
    },
    "motivo": "iam direto ao checkout; trocados por anúncios para a página de vendas em 29/10"
+  },
+  {
+   "campanha": "kit",
+   "anuncios": {
+    "Kit - Markup 2x vs 3x (página)": "120252838269240597"
+   },
+   "motivo": "fraco (CTR ~2,7%); pausado no rodízio de 01/11"
+  },
+  {
+   "campanha": "kit",
+   "anuncios": {
+    "Kit - 3 erros de preço (página)": "120252838269900597"
+   },
+   "motivo": "fraco (CTR ~2,7%); pausado no rodízio de 01/11"
   }
  ]
 }
