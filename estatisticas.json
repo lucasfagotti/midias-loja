@@ -8,13 +8,20 @@
   "2026-11-01": 17,
   "2026-11-02": 17
  },
- "atualizado": "2026-11-02T18:54",
+ "atualizado": "2026-11-02T19:54",
  "seguidores": 17,
  "seguindo": 24,
- "posts": 12,
+ "posts": 13,
  "alcance_hoje": 111,
  "visitas_hoje": 2,
  "recentes": [
+  {
+   "id": "18466288825184333",
+   "tipo": "VIDEO",
+   "quando": "2026-11-02T22:05",
+   "titulo": "O mesmo preço em todos os canais é um dos erros que mais come lucro de lojista. Mercado Li",
+   "link": "https://www.instagram.com/reel/DfQVoIMlIG3/"
+  },
   {
    "id": "18100807100404047",
    "tipo": "CAROUSEL_ALBUM",
@@ -91,13 +98,6 @@
    "quando": "2026-10-26T21:46",
    "titulo": "Vender muito com preço errado é trabalhar de graça. Markup 3x cobre custo, taxa da Shopee,",
    "link": "https://www.instagram.com/p/De-SAkSG1DE/"
-  },
-  {
-   "id": "18115133432612689",
-   "tipo": "CAROUSEL_ALBUM",
-   "quando": "2026-10-26T21:45",
-   "titulo": "Alguns centavos fazem você perder quase R$ 7 por venda na Shopee. A taxa é comissão em % +",
-   "link": "https://www.instagram.com/p/De-R5o_G0DA/"
   }
  ]
 }
