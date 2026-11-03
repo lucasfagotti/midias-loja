@@ -9,13 +9,20 @@
   "2026-11-02": 17,
   "2026-11-03": 17
  },
- "atualizado": "2026-11-03T11:44",
+ "atualizado": "2026-11-03T12:44",
  "seguidores": 17,
  "seguindo": 24,
- "posts": 13,
- "alcance_hoje": 73,
+ "posts": 14,
+ "alcance_hoje": 74,
  "visitas_hoje": 1,
  "recentes": [
+  {
+   "id": "18401629999163862",
+   "tipo": "CAROUSEL_ALBUM",
+   "quando": "2026-11-03T15:24",
+   "titulo": "As taxas do Mercado Livre mudaram em 2026. A calculadora sugere o preço pelo markup, calcu",
+   "link": "https://www.instagram.com/p/DfSMp0hlLI5/"
+  },
   {
    "id": "18466288825184333",
    "tipo": "VIDEO",
@@ -92,13 +99,6 @@
    "quando": "2026-10-26T21:47",
    "titulo": "Mercadoria paga na prateleira perde valor todo mês. A planilha do Kit mostra quanto dinhei",
    "link": "https://www.instagram.com/p/De-SFJbGy7M/"
-  },
-  {
-   "id": "18138977764629074",
-   "tipo": "CAROUSEL_ALBUM",
-   "quando": "2026-10-26T21:46",
-   "titulo": "Vender muito com preço errado é trabalhar de graça. Markup 3x cobre custo, taxa da Shopee,",
-   "link": "https://www.instagram.com/p/De-SAkSG1DE/"
   }
  ]
 }
