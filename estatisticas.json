@@ -10,13 +10,20 @@
   "2026-11-03": 17,
   "2026-11-04": 17
  },
- "atualizado": "2026-11-04T11:34",
+ "atualizado": "2026-11-04T12:34",
  "seguidores": 17,
  "seguindo": 24,
- "posts": 14,
+ "posts": 15,
  "alcance_hoje": 19,
  "visitas_hoje": 3,
  "recentes": [
+  {
+   "id": "17958641835254416",
+   "tipo": "CAROUSEL_ALBUM",
+   "quando": "2026-11-04T15:14",
+   "titulo": "Salve o calendário!",
+   "link": "https://www.instagram.com/p/DfUwRqplp4Z/"
+  },
   {
    "id": "18401629999163862",
    "tipo": "CAROUSEL_ALBUM",
@@ -93,13 +100,6 @@
    "quando": "2026-10-26T21:48",
    "titulo": "O comprador busca palavras, não adjetivos. No guia do Kit tem a fórmula e 10 exemplos por ",
    "link": "https://www.instagram.com/p/De-SJqNmwJm/"
-  },
-  {
-   "id": "18042443492832162",
-   "tipo": "CAROUSEL_ALBUM",
-   "quando": "2026-10-26T21:47",
-   "titulo": "Mercadoria paga na prateleira perde valor todo mês. A planilha do Kit mostra quanto dinhei",
-   "link": "https://www.instagram.com/p/De-SFJbGy7M/"
   }
  ]
 }
