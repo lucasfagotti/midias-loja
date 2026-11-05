@@ -9,15 +9,22 @@
   "2026-11-02": 17,
   "2026-11-03": 17,
   "2026-11-04": 17,
-  "2026-11-05": 17
+  "2026-11-05": 16
  },
- "atualizado": "2026-11-05T15:20",
- "seguidores": 17,
+ "atualizado": "2026-11-05T20:35",
+ "seguidores": 16,
  "seguindo": 24,
- "posts": 15,
- "alcance_hoje": 18,
+ "posts": 16,
+ "alcance_hoje": 19,
  "visitas_hoje": 1,
  "recentes": [
+  {
+   "id": "18001653678010100",
+   "tipo": "VIDEO",
+   "quando": "2026-11-05T23:34",
+   "titulo": "Cliente comprou online, desistiu e quer devolver? Cada caso tem uma resposta certa. Arrepe",
+   "link": "https://www.instagram.com/reel/DfYOR-9E8av/"
+  },
   {
    "id": "17958641835254416",
    "tipo": "CAROUSEL_ALBUM",
@@ -94,13 +101,6 @@
    "quando": "2026-10-26T21:48",
    "titulo": "A primeira foto decide o clique, as outras decidem a compra. Salve para usar no próximo an",
    "link": "https://www.instagram.com/p/De-SONoG1uM/"
-  },
-  {
-   "id": "18200609533381149",
-   "tipo": "CAROUSEL_ALBUM",
-   "quando": "2026-10-26T21:48",
-   "titulo": "O comprador busca palavras, não adjetivos. No guia do Kit tem a fórmula e 10 exemplos por ",
-   "link": "https://www.instagram.com/p/De-SJqNmwJm/"
   }
  ]
 }
