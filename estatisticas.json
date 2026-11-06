@@ -12,13 +12,20 @@
   "2026-11-05": 16,
   "2026-11-06": 17
  },
- "atualizado": "2026-11-06T18:24",
+ "atualizado": "2026-11-06T19:24",
  "seguidores": 17,
  "seguindo": 24,
- "posts": 16,
- "alcance_hoje": 19,
+ "posts": 17,
+ "alcance_hoje": 20,
  "visitas_hoje": 1,
  "recentes": [
+  {
+   "id": "18372468556244743",
+   "tipo": "VIDEO",
+   "quando": "2026-11-06T22:24",
+   "titulo": "Quem atende sozinho sabe: cada mensagem respondida do zero é tempo que você não usa pra ve",
+   "link": "https://www.instagram.com/reel/DfarDmdDPJO/"
+  },
   {
    "id": "18001653678010100",
    "tipo": "VIDEO",
@@ -95,13 +102,6 @@
    "quando": "2026-10-26T21:49",
    "titulo": "Ads acelera o que já funciona, não conserta anúncio ruim. Comente KIT que eu te mando o gu",
    "link": "https://www.instagram.com/p/De-SSGem7Tb/"
-  },
-  {
-   "id": "18129505270891285",
-   "tipo": "CAROUSEL_ALBUM",
-   "quando": "2026-10-26T21:48",
-   "titulo": "A primeira foto decide o clique, as outras decidem a compra. Salve para usar no próximo an",
-   "link": "https://www.instagram.com/p/De-SONoG1uM/"
   }
  ]
 }
