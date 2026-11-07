@@ -13,13 +13,20 @@
   "2026-11-06": 17,
   "2026-11-07": 17
  },
- "atualizado": "2026-11-07T11:24",
+ "atualizado": "2026-11-07T12:24",
  "seguidores": 17,
  "seguindo": 24,
- "posts": 17,
+ "posts": 18,
  "alcance_hoje": 10,
  "visitas_hoje": 1,
  "recentes": [
+  {
+   "id": "18389670430233848",
+   "tipo": "CAROUSEL_ALBUM",
+   "quando": "2026-11-07T15:04",
+   "titulo": "Faça a auditoria da sua loja sozinho em uma tarde.",
+   "link": "https://www.instagram.com/p/DfcdhegkSPe/"
+  },
   {
    "id": "18372468556244743",
    "tipo": "VIDEO",
@@ -96,13 +103,6 @@
    "quando": "2026-10-27T16:45",
    "titulo": "Quanto do seu dinheiro está parado na prateleira agora? A planilha Estoque que Gira mostra",
    "link": "https://www.instagram.com/p/DfAUU-WicDL/"
-  },
-  {
-   "id": "17977945062131999",
-   "tipo": "CAROUSEL_ALBUM",
-   "quando": "2026-10-26T21:49",
-   "titulo": "Ads acelera o que já funciona, não conserta anúncio ruim. Comente KIT que eu te mando o gu",
-   "link": "https://www.instagram.com/p/De-SSGem7Tb/"
   }
  ]
 }
