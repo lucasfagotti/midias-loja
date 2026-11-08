@@ -14,13 +14,20 @@
   "2026-11-07": 17,
   "2026-11-08": 17
  },
- "atualizado": "2026-11-08T18:24",
+ "atualizado": "2026-11-08T19:24",
  "seguidores": 17,
  "seguindo": 24,
- "posts": 18,
+ "posts": 19,
  "alcance_hoje": 5,
  "visitas_hoje": 0,
  "recentes": [
+  {
+   "id": "17893272258455231",
+   "tipo": "VIDEO",
+   "quando": "2026-11-08T22:05",
+   "titulo": "Dez vídeos prontos para a sua loja, cada um num formato diferente: lançamento, 3 motivos, ",
+   "link": "https://www.instagram.com/reel/Dffyc6Yjn86/"
+  },
   {
    "id": "18389670430233848",
    "tipo": "CAROUSEL_ALBUM",
@@ -97,13 +104,6 @@
    "quando": "2026-10-28T22:04",
    "titulo": "Quanto do seu dinheiro está parado na prateleira agora? A Planilha Estoque que Gira mostra",
    "link": "https://www.instagram.com/reel/DfDdnA4ETNe/"
-  },
-  {
-   "id": "18116811668135613",
-   "tipo": "CAROUSEL_ALBUM",
-   "quando": "2026-10-27T16:45",
-   "titulo": "Quanto do seu dinheiro está parado na prateleira agora? A planilha Estoque que Gira mostra",
-   "link": "https://www.instagram.com/p/DfAUU-WicDL/"
   }
  ]
 }
