@@ -15,13 +15,20 @@
   "2026-11-08": 17,
   "2026-11-09": 17
  },
- "atualizado": "2026-11-09T11:24",
+ "atualizado": "2026-11-09T12:24",
  "seguidores": 17,
  "seguindo": 24,
- "posts": 19,
+ "posts": 20,
  "alcance_hoje": 12,
  "visitas_hoje": 0,
  "recentes": [
+  {
+   "id": "17964013457997696",
+   "tipo": "CAROUSEL_ALBUM",
+   "quando": "2026-11-09T15:24",
+   "titulo": "Responder cliente do zero toda vez cansa. São 122 mensagens prontas para pré-venda, trocas",
+   "link": "https://www.instagram.com/p/DfhpZzhmxel/"
+  },
   {
    "id": "17893272258455231",
    "tipo": "VIDEO",
@@ -98,13 +105,6 @@
    "quando": "2026-10-29T15:24",
    "titulo": "Antes de gastar mais com Ads, descubra onde a sua loja perde vendas. 45 perguntas, nota de",
    "link": "https://www.instagram.com/p/DfFUpqIEUvP/"
-  },
-  {
-   "id": "18356185978264847",
-   "tipo": "VIDEO",
-   "quando": "2026-10-28T22:04",
-   "titulo": "Quanto do seu dinheiro está parado na prateleira agora? A Planilha Estoque que Gira mostra",
-   "link": "https://www.instagram.com/reel/DfDdnA4ETNe/"
   }
  ]
 }
