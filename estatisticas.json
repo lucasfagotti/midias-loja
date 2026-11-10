@@ -16,13 +16,20 @@
   "2026-11-09": 17,
   "2026-11-10": 17
  },
- "atualizado": "2026-11-10T11:24",
+ "atualizado": "2026-11-10T12:24",
  "seguidores": 17,
  "seguindo": 24,
- "posts": 20,
+ "posts": 21,
  "alcance_hoje": 3,
  "visitas_hoje": 1,
  "recentes": [
+  {
+   "id": "17922397170241390",
+   "tipo": "CAROUSEL_ALBUM",
+   "quando": "2026-11-10T15:14",
+   "titulo": "A ordem importa: de nada adianta trazer visitas para produto que vende com prejuízo.",
+   "link": "https://www.instagram.com/p/DfkNDPTkUqe/"
+  },
   {
    "id": "17964013457997696",
    "tipo": "CAROUSEL_ALBUM",
@@ -99,13 +106,6 @@
    "quando": "2026-10-30T22:25",
    "titulo": "Estoque parado é prejuízo silencioso. Três sinais de que seu estoque está te dando prejuíz",
    "link": "https://www.instagram.com/reel/DfIpglVlNbU/"
-  },
-  {
-   "id": "17906317290351709",
-   "tipo": "CAROUSEL_ALBUM",
-   "quando": "2026-10-29T15:24",
-   "titulo": "Antes de gastar mais com Ads, descubra onde a sua loja perde vendas. 45 perguntas, nota de",
-   "link": "https://www.instagram.com/p/DfFUpqIEUvP/"
   }
  ]
 }
