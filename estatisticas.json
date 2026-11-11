@@ -17,13 +17,20 @@
   "2026-11-10": 17,
   "2026-11-11": 17
  },
- "atualizado": "2026-11-11T18:54",
+ "atualizado": "2026-11-11T19:54",
  "seguidores": 17,
  "seguindo": 24,
- "posts": 21,
+ "posts": 22,
  "alcance_hoje": 2,
  "visitas_hoje": 3,
  "recentes": [
+  {
+   "id": "17961394623014273",
+   "tipo": "VIDEO",
+   "quando": "2026-11-11T22:14",
+   "titulo": "Todo mundo lembra do Dia das Mães e da Black Friday. Mas e o Dia do Consumidor (15/03), o ",
+   "link": "https://www.instagram.com/reel/Dfnh5JwDwh-/"
+  },
   {
    "id": "17922397170241390",
    "tipo": "CAROUSEL_ALBUM",
@@ -100,13 +107,6 @@
    "quando": "2026-10-31T22:15",
    "titulo": "As taxas do Mercado Livre mudaram em março de 2026. Você já sabe o que isso significa na p",
    "link": "https://www.instagram.com/reel/DfLNOPMCsds/"
-  },
-  {
-   "id": "18422592673158453",
-   "tipo": "VIDEO",
-   "quando": "2026-10-30T22:25",
-   "titulo": "Estoque parado é prejuízo silencioso. Três sinais de que seu estoque está te dando prejuíz",
-   "link": "https://www.instagram.com/reel/DfIpglVlNbU/"
   }
  ]
 }
