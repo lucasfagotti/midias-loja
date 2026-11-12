@@ -18,13 +18,20 @@
   "2026-11-11": 17,
   "2026-11-12": 17
  },
- "atualizado": "2026-11-12T18:54",
+ "atualizado": "2026-11-12T19:54",
  "seguidores": 17,
  "seguindo": 24,
- "posts": 22,
- "alcance_hoje": 5,
+ "posts": 23,
+ "alcance_hoje": 6,
  "visitas_hoje": 1,
  "recentes": [
+  {
+   "id": "18503352667102298",
+   "tipo": "VIDEO",
+   "quando": "2026-11-12T22:15",
+   "titulo": "Você já reparou que loja que vende bem tem vídeo todo dia? Não é sorte, é processo. O Reel",
+   "link": "https://www.instagram.com/reel/DfqGtWMDcOt/"
+  },
   {
    "id": "17961394623014273",
    "tipo": "VIDEO",
@@ -101,13 +108,6 @@
    "quando": "2026-11-01T15:24",
    "titulo": "Você já parou para calcular se o preço que prática realmente cobre todos os custos e ainda",
    "link": "https://www.instagram.com/p/DfNDDbrHA4D/"
-  },
-  {
-   "id": "18482658925143184",
-   "tipo": "VIDEO",
-   "quando": "2026-10-31T22:15",
-   "titulo": "As taxas do Mercado Livre mudaram em março de 2026. Você já sabe o que isso significa na p",
-   "link": "https://www.instagram.com/reel/DfLNOPMCsds/"
   }
  ]
 }
