@@ -394,5 +394,9 @@
  "2026-11-12 15:07 instagram midia/stories/2026-11-12-3-salvou.jpg": {
   "id": "18135478078667798",
   "em": "2026-11-12 15:14"
+ },
+ "2026-11-12 17:19 instagram midia/stories/2026-11-12-4-cta.jpg": {
+  "falhas": 1,
+  "erro": "erro ao publicar: {'error': {'message': 'The requested resource does not exist', 'type': 'OAuthException', 'code': 24, 'error_subcode': 2207006, 'is_transient': False, 'error_user_title': 'Media Not Found', 'error_user_msg': 'The media with 17,945,152,269,146,631 cannot be found.', 'fbtrace_id': 'Au"
  }
 }
