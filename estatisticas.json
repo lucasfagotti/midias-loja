@@ -19,13 +19,20 @@
   "2026-11-12": 17,
   "2026-11-13": 17
  },
- "atualizado": "2026-11-13T19:04",
+ "atualizado": "2026-11-13T20:04",
  "seguidores": 17,
  "seguindo": 24,
- "posts": 23,
+ "posts": 24,
  "alcance_hoje": 6,
  "visitas_hoje": 1,
  "recentes": [
+  {
+   "id": "17939086185392009",
+   "tipo": "VIDEO",
+   "quando": "2026-11-13T22:35",
+   "titulo": "Abrir o Instagram da loja e travar sem saber o que postar? A Assinatura Conteúdo do Mês en",
+   "link": "https://www.instagram.com/reel/DfstyH_FAIw/"
+  },
   {
    "id": "18503352667102298",
    "tipo": "VIDEO",
@@ -102,13 +109,6 @@
    "quando": "2026-11-02T22:05",
    "titulo": "O mesmo preço em todos os canais é um dos erros que mais come lucro de lojista. Mercado Li",
    "link": "https://www.instagram.com/reel/DfQVoIMlIG3/"
-  },
-  {
-   "id": "18100807100404047",
-   "tipo": "CAROUSEL_ALBUM",
-   "quando": "2026-11-01T15:24",
-   "titulo": "Você já parou para calcular se o preço que prática realmente cobre todos os custos e ainda",
-   "link": "https://www.instagram.com/p/DfNDDbrHA4D/"
   }
  ]
 }
