@@ -20,13 +20,20 @@
   "2026-11-13": 17,
   "2026-11-14": 17
  },
- "atualizado": "2026-11-14T11:04",
+ "atualizado": "2026-11-14T12:04",
  "seguidores": 17,
  "seguindo": 24,
- "posts": 24,
+ "posts": 25,
  "alcance_hoje": 24,
  "visitas_hoje": 0,
  "recentes": [
+  {
+   "id": "18647695078038335",
+   "tipo": "CAROUSEL_ALBUM",
+   "quando": "2026-11-14T15:04",
+   "titulo": "Faturou R$ 25 mil e lucrou quanto? Sem DRE, você não sabe.",
+   "link": "https://www.instagram.com/p/DfufGDNIFqr/"
+  },
   {
    "id": "17939086185392009",
    "tipo": "VIDEO",
@@ -103,13 +110,6 @@
    "quando": "2026-11-03T15:24",
    "titulo": "As taxas do Mercado Livre mudaram em 2026. A calculadora sugere o preço pelo markup, calcu",
    "link": "https://www.instagram.com/p/DfSMp0hlLI5/"
-  },
-  {
-   "id": "18466288825184333",
-   "tipo": "VIDEO",
-   "quando": "2026-11-02T22:05",
-   "titulo": "O mesmo preço em todos os canais é um dos erros que mais come lucro de lojista. Mercado Li",
-   "link": "https://www.instagram.com/reel/DfQVoIMlIG3/"
   }
  ]
 }
