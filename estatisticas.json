@@ -21,13 +21,20 @@
   "2026-11-14": 17,
   "2026-11-15": 17
  },
- "atualizado": "2026-11-15T11:54",
+ "atualizado": "2026-11-15T12:54",
  "seguidores": 17,
  "seguindo": 24,
- "posts": 25,
+ "posts": 26,
  "alcance_hoje": 8,
  "visitas_hoje": 0,
  "recentes": [
+  {
+   "id": "18148693360594529",
+   "tipo": "CAROUSEL_ALBUM",
+   "quando": "2026-11-15T15:14",
+   "titulo": "10 Reels narrados com os produtos da sua loja, com a sua cor e o seu @. Você preenche o fo",
+   "link": "https://www.instagram.com/p/DfxFBqBEaNB/"
+  },
   {
    "id": "18647695078038335",
    "tipo": "CAROUSEL_ALBUM",
@@ -104,13 +111,6 @@
    "quando": "2026-11-04T15:14",
    "titulo": "Salve o calendário!",
    "link": "https://www.instagram.com/p/DfUwRqplp4Z/"
-  },
-  {
-   "id": "18401629999163862",
-   "tipo": "CAROUSEL_ALBUM",
-   "quando": "2026-11-03T15:24",
-   "titulo": "As taxas do Mercado Livre mudaram em 2026. A calculadora sugere o preço pelo markup, calcu",
-   "link": "https://www.instagram.com/p/DfSMp0hlLI5/"
   }
  ]
 }
