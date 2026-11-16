@@ -22,13 +22,20 @@
   "2026-11-15": 17,
   "2026-11-16": 17
  },
- "atualizado": "2026-11-16T18:54",
+ "atualizado": "2026-11-16T19:54",
  "seguidores": 17,
  "seguindo": 24,
- "posts": 26,
+ "posts": 27,
  "alcance_hoje": 2,
  "visitas_hoje": 1,
  "recentes": [
+  {
+   "id": "18160572622450938",
+   "tipo": "VIDEO",
+   "quando": "2026-11-16T22:15",
+   "titulo": "3 erros de preço que quebram loja na Shopee. Preço não é chute.",
+   "link": "https://www.instagram.com/reel/Df0Z8vUlCMo/"
+  },
   {
    "id": "18148693360594529",
    "tipo": "CAROUSEL_ALBUM",
@@ -105,13 +112,6 @@
    "quando": "2026-11-05T23:34",
    "titulo": "Cliente comprou online, desistiu e quer devolver? Cada caso tem uma resposta certa. Arrepe",
    "link": "https://www.instagram.com/reel/DfYOR-9E8av/"
-  },
-  {
-   "id": "17958641835254416",
-   "tipo": "CAROUSEL_ALBUM",
-   "quando": "2026-11-04T15:14",
-   "titulo": "Salve o calendário!",
-   "link": "https://www.instagram.com/p/DfUwRqplp4Z/"
   }
  ]
 }
