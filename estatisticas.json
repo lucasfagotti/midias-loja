@@ -23,13 +23,20 @@
   "2026-11-16": 17,
   "2026-11-17": 17
  },
- "atualizado": "2026-11-17T11:54",
+ "atualizado": "2026-11-17T12:54",
  "seguidores": 17,
  "seguindo": 24,
- "posts": 27,
+ "posts": 28,
  "alcance_hoje": 19,
  "visitas_hoje": 1,
  "recentes": [
+  {
+   "id": "18132100858867701",
+   "tipo": "CAROUSEL_ALBUM",
+   "quando": "2026-11-17T15:24",
+   "titulo": "Preço não é chute.",
+   "link": "https://www.instagram.com/p/Df2PxUclLnB/"
+  },
   {
    "id": "18160572622450938",
    "tipo": "VIDEO",
@@ -106,13 +113,6 @@
    "quando": "2026-11-06T22:24",
    "titulo": "Quem atende sozinho sabe: cada mensagem respondida do zero é tempo que você não usa pra ve",
    "link": "https://www.instagram.com/reel/DfarDmdDPJO/"
-  },
-  {
-   "id": "18001653678010100",
-   "tipo": "VIDEO",
-   "quando": "2026-11-05T23:34",
-   "titulo": "Cliente comprou online, desistiu e quer devolver? Cada caso tem uma resposta certa. Arrepe",
-   "link": "https://www.instagram.com/reel/DfYOR-9E8av/"
   }
  ]
 }
