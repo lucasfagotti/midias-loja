@@ -24,13 +24,20 @@
   "2026-11-17": 16,
   "2026-11-18": 16
  },
- "atualizado": "2026-11-18T18:24",
+ "atualizado": "2026-11-18T19:24",
  "seguidores": 16,
  "seguindo": 24,
- "posts": 28,
+ "posts": 29,
  "alcance_hoje": 4,
  "visitas_hoje": 0,
  "recentes": [
+  {
+   "id": "18134494702838451",
+   "tipo": "VIDEO",
+   "quando": "2026-11-18T22:05",
+   "titulo": "Quem vende bem na data começa antes. O Calendário Comercial 2027 traz trinta e duas datas ",
+   "link": "https://www.instagram.com/reel/Df5iY2zCkF-/"
+  },
   {
    "id": "18132100858867701",
    "tipo": "CAROUSEL_ALBUM",
@@ -107,13 +114,6 @@
    "quando": "2026-11-07T15:04",
    "titulo": "Faça a auditoria da sua loja sozinho em uma tarde.",
    "link": "https://www.instagram.com/p/DfcdhegkSPe/"
-  },
-  {
-   "id": "18372468556244743",
-   "tipo": "VIDEO",
-   "quando": "2026-11-06T22:24",
-   "titulo": "Quem atende sozinho sabe: cada mensagem respondida do zero é tempo que você não usa pra ve",
-   "link": "https://www.instagram.com/reel/DfarDmdDPJO/"
   }
  ]
 }
