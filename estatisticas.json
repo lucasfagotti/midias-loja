@@ -26,13 +26,20 @@
   "2026-11-19": 16,
   "2026-11-20": 16
  },
- "atualizado": "2026-11-20T18:54",
+ "atualizado": "2026-11-20T19:54",
  "seguidores": 16,
  "seguindo": 24,
- "posts": 30,
+ "posts": 31,
  "alcance_hoje": 25,
  "visitas_hoje": 0,
  "recentes": [
+  {
+   "id": "18184363852429671",
+   "tipo": "VIDEO",
+   "quando": "2026-11-20T22:15",
+   "titulo": "Seu produto de R$ 80 paga MAIS taxa que um de R$ 79,90. Alguns centavos fazem você perder ",
+   "link": "https://www.instagram.com/reel/Df-tDakAKBG/"
+  },
   {
    "id": "18643757926058575",
    "tipo": "VIDEO",
@@ -109,13 +116,6 @@
    "quando": "2026-11-09T15:24",
    "titulo": "Responder cliente do zero toda vez cansa. São 122 mensagens prontas para pré-venda, trocas",
    "link": "https://www.instagram.com/p/DfhpZzhmxel/"
-  },
-  {
-   "id": "17893272258455231",
-   "tipo": "VIDEO",
-   "quando": "2026-11-08T22:05",
-   "titulo": "Dez vídeos prontos para a sua loja, cada um num formato diferente: lançamento, 3 motivos, ",
-   "link": "https://www.instagram.com/reel/Dffyc6Yjn86/"
   }
  ]
 }
