@@ -27,13 +27,20 @@
   "2026-11-20": 16,
   "2026-11-21": 16
  },
- "atualizado": "2026-11-21T11:54",
+ "atualizado": "2026-11-21T12:54",
  "seguidores": 16,
  "seguindo": 24,
- "posts": 31,
+ "posts": 32,
  "alcance_hoje": 14,
  "visitas_hoje": 0,
  "recentes": [
+  {
+   "id": "17883345876545979",
+   "tipo": "CAROUSEL_ALBUM",
+   "quando": "2026-11-21T15:14",
+   "titulo": "Quem vende bem na data começa antes. 32 datas de 2027 para moda e calçados, com quando pre",
+   "link": "https://www.instagram.com/p/DgAhztJHDTc/"
+  },
   {
    "id": "18184363852429671",
    "tipo": "VIDEO",
@@ -110,13 +117,6 @@
    "quando": "2026-11-10T15:14",
    "titulo": "A ordem importa: de nada adianta trazer visitas para produto que vende com prejuízo.",
    "link": "https://www.instagram.com/p/DfkNDPTkUqe/"
-  },
-  {
-   "id": "17964013457997696",
-   "tipo": "CAROUSEL_ALBUM",
-   "quando": "2026-11-09T15:24",
-   "titulo": "Responder cliente do zero toda vez cansa. São 122 mensagens prontas para pré-venda, trocas",
-   "link": "https://www.instagram.com/p/DfhpZzhmxel/"
   }
  ]
 }
