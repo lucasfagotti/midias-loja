@@ -28,13 +28,20 @@
   "2026-11-21": 17,
   "2026-11-22": 17
  },
- "atualizado": "2026-11-22T18:54",
+ "atualizado": "2026-11-22T19:54",
  "seguidores": 17,
  "seguindo": 24,
- "posts": 32,
+ "posts": 33,
  "alcance_hoje": 8,
  "visitas_hoje": 2,
  "recentes": [
+  {
+   "id": "17958065736335922",
+   "tipo": "VIDEO",
+   "quando": "2026-11-22T22:25",
+   "titulo": "Markup 2x na Shopee é prejuízo disfarçado. Vender muito com preço errado é trabalhar de gr",
+   "link": "https://www.instagram.com/reel/DgD31DNAVQK/"
+  },
   {
    "id": "17883345876545979",
    "tipo": "CAROUSEL_ALBUM",
@@ -111,13 +118,6 @@
    "quando": "2026-11-11T22:14",
    "titulo": "Todo mundo lembra do Dia das Mães e da Black Friday. Mas e o Dia do Consumidor (15/03), o ",
    "link": "https://www.instagram.com/reel/Dfnh5JwDwh-/"
-  },
-  {
-   "id": "17922397170241390",
-   "tipo": "CAROUSEL_ALBUM",
-   "quando": "2026-11-10T15:14",
-   "titulo": "A ordem importa: de nada adianta trazer visitas para produto que vende com prejuízo.",
-   "link": "https://www.instagram.com/p/DfkNDPTkUqe/"
   }
  ]
 }
