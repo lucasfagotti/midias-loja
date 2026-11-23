@@ -29,13 +29,20 @@
   "2026-11-22": 17,
   "2026-11-23": 17
  },
- "atualizado": "2026-11-23T18:54",
+ "atualizado": "2026-11-23T19:54",
  "seguidores": 17,
  "seguindo": 24,
- "posts": 33,
+ "posts": 34,
  "alcance_hoje": 20,
  "visitas_hoje": 1,
  "recentes": [
+  {
+   "id": "17939671863409612",
+   "tipo": "VIDEO",
+   "quando": "2026-11-23T22:05",
+   "titulo": "Estoque parado não é patrimônio. É prejuízo.. Mercadoria paga na prateleira perde valor to",
+   "link": "https://www.instagram.com/reel/DgGaWACjMFX/"
+  },
   {
    "id": "17958065736335922",
    "tipo": "VIDEO",
@@ -112,13 +119,6 @@
    "quando": "2026-11-12T22:15",
    "titulo": "Você já reparou que loja que vende bem tem vídeo todo dia? Não é sorte, é processo. O Reel",
    "link": "https://www.instagram.com/reel/DfqGtWMDcOt/"
-  },
-  {
-   "id": "17961394623014273",
-   "tipo": "VIDEO",
-   "quando": "2026-11-11T22:14",
-   "titulo": "Todo mundo lembra do Dia das Mães e da Black Friday. Mas e o Dia do Consumidor (15/03), o ",
-   "link": "https://www.instagram.com/reel/Dfnh5JwDwh-/"
   }
  ]
 }
