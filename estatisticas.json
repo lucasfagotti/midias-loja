@@ -30,13 +30,20 @@
   "2026-11-23": 17,
   "2026-11-24": 17
  },
- "atualizado": "2026-11-24T18:54",
+ "atualizado": "2026-11-24T19:54",
  "seguidores": 17,
  "seguindo": 24,
- "posts": 34,
+ "posts": 35,
  "alcance_hoje": 9,
  "visitas_hoje": 1,
  "recentes": [
+  {
+   "id": "17918561574470328",
+   "tipo": "VIDEO",
+   "quando": "2026-11-24T22:24",
+   "titulo": "Instagram da loja parado de novo? Não é falta de produto, é falta de conteúdo pronto pra p",
+   "link": "https://www.instagram.com/reel/DgJBXPhE1th/"
+  },
   {
    "id": "17939671863409612",
    "tipo": "VIDEO",
@@ -113,13 +120,6 @@
    "quando": "2026-11-13T22:35",
    "titulo": "Abrir o Instagram da loja e travar sem saber o que postar? A Assinatura Conteúdo do Mês en",
    "link": "https://www.instagram.com/reel/DfstyH_FAIw/"
-  },
-  {
-   "id": "18503352667102298",
-   "tipo": "VIDEO",
-   "quando": "2026-11-12T22:15",
-   "titulo": "Você já reparou que loja que vende bem tem vídeo todo dia? Não é sorte, é processo. O Reel",
-   "link": "https://www.instagram.com/reel/DfqGtWMDcOt/"
   }
  ]
 }
