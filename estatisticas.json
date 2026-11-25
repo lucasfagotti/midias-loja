@@ -31,13 +31,20 @@
   "2026-11-24": 17,
   "2026-11-25": 17
  },
- "atualizado": "2026-11-25T18:54",
+ "atualizado": "2026-11-25T19:54",
  "seguidores": 17,
  "seguindo": 24,
- "posts": 35,
+ "posts": 36,
  "alcance_hoje": 7,
  "visitas_hoje": 0,
  "recentes": [
+  {
+   "id": "18067624832523336",
+   "tipo": "VIDEO",
+   "quando": "2026-11-25T22:25",
+   "titulo": "Por que ninguém encontra o seu produto na Shopee. O comprador busca palavras, não adjetivo",
+   "link": "https://www.instagram.com/reel/DgLmL9FzRef/"
+  },
   {
    "id": "17918561574470328",
    "tipo": "VIDEO",
@@ -114,13 +121,6 @@
    "quando": "2026-11-14T15:04",
    "titulo": "Faturou R$ 25 mil e lucrou quanto? Sem DRE, você não sabe.",
    "link": "https://www.instagram.com/p/DfufGDNIFqr/"
-  },
-  {
-   "id": "17939086185392009",
-   "tipo": "VIDEO",
-   "quando": "2026-11-13T22:35",
-   "titulo": "Abrir o Instagram da loja e travar sem saber o que postar? A Assinatura Conteúdo do Mês en",
-   "link": "https://www.instagram.com/reel/DfstyH_FAIw/"
   }
  ]
 }
