@@ -33,13 +33,20 @@
   "2026-11-26": 18,
   "2026-11-27": 18
  },
- "atualizado": "2026-11-27T11:54",
+ "atualizado": "2026-11-27T12:54",
  "seguidores": 18,
  "seguindo": 24,
- "posts": 37,
- "alcance_hoje": 12,
+ "posts": 38,
+ "alcance_hoje": 13,
  "visitas_hoje": 0,
  "recentes": [
+  {
+   "id": "18384499927209679",
+   "tipo": "CAROUSEL_ALBUM",
+   "quando": "2026-11-27T15:24",
+   "titulo": "Instagram da loja parado de novo? Todo mês: 20 posts editáveis no Canva, 8 roteiros de Ree",
+   "link": "https://www.instagram.com/p/DgP_tVAIOU2/"
+  },
   {
    "id": "17992695681096525",
    "tipo": "VIDEO",
@@ -116,13 +123,6 @@
    "quando": "2026-11-16T22:15",
    "titulo": "3 erros de preço que quebram loja na Shopee. Preço não é chute.",
    "link": "https://www.instagram.com/reel/Df0Z8vUlCMo/"
-  },
-  {
-   "id": "18148693360594529",
-   "tipo": "CAROUSEL_ALBUM",
-   "quando": "2026-11-15T15:14",
-   "titulo": "10 Reels narrados com os produtos da sua loja, com a sua cor e o seu @. Você preenche o fo",
-   "link": "https://www.instagram.com/p/DfxFBqBEaNB/"
   }
  ]
 }
